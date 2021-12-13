@@ -1,5 +1,6 @@
 <template>
   <div class="hello">333</div>
+  <svg-icon icon-class="call"></svg-icon>
 </template>
 
 <script>
