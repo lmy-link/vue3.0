@@ -5,38 +5,38 @@
 </template>
 
 <script>
-import { computed, toRefs } from 'vue'
+import { computed, toRefs } from "vue";
 export default {
-  name: 'SvgIcon',
+  name: "SvgIcon",
   props: {
     iconClass: {
       type: String,
-      required: true
+      required: true,
     },
     className: {
-      type: String
-    }
+      type: String,
+    },
   },
   setup(props) {
-    const { iconClass, className } = toRefs(props)
+    const { iconClass, className } = toRefs(props);
     // computed 生成iconName svgClass
     const iconName = computed(() => {
-      return `#icon-${iconClass.value}`
-    })
+      return `#icon-${iconClass.value}`;
+    });
     const svgClass = computed(() => {
       if (className.value) {
-        return 'svg-icon ' + className.value
+        return "svg-icon " + className.value;
       } else {
-        return 'svg-icon'
+        return "svg-icon";
       }
-    })
+    });
 
     return {
       iconName,
-      svgClass
-    }
-  }
-}
+      svgClass,
+    };
+  },
+};
 </script>
 
 <style scoped>
