@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">333</div>
+  <div class="hello">字体</div>
   <svg-icon icon-class="call"></svg-icon>
 </template>
 
@@ -14,4 +14,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.hello {
+  font-size: 20px;
+}
 </style>
